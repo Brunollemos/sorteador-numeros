@@ -10,12 +10,10 @@ function sortear() {
         numero = obterNumeroAleatorio(de, ate);
         sorteados.push(numero);
 
-        alert(sorteados);
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = <label class="texto__paragrafo">Números sorteados: ${sorteados}</label>;
     }
-
-    alert(`Quantidade: ${quantidade}`);
-    alert(`Do número: ${de}`);
-    alert(`Até o número: ${ate}`);    
+   
 }
 
 function obterNumeroAleatorio(min, max) {
